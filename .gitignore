@@ -1,0 +1,7 @@
+.DS_Store
+db/*.sqlite3
+config/*.yml
+log/*.log
+app/stylesheets/.sass-cache
+tmp/**/*
+tmp/restart.txt
