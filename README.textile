@@ -1,0 +1,24 @@
+h1. Joins in Revolution
+
+h2. Summary
+
+The goal of this project is to combine the various open features from social sites and services, in to one unified Engine with an API you can use in your own rails projects.
+
+h2. Model Example
+
+<pre><code>
+  class User < ActiveRecord::Base
+    joins_in_revolution
+    
+    # ...
+  end
+</code></pre>
+
+<pre><code>
+  # somewhere in a view or in console later
+  current_user.twitter.stream # view full stream
+  msg = "Hi guys"
+  current_user.twitter.post(msg)
+  current_user.facebook.post(msg)
+  # and so on
+</code></pre>
